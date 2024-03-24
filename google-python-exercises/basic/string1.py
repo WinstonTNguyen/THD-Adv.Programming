@@ -39,7 +39,7 @@ def both_ends(s):
   if len(s) < 2:
     return ''
   else:
-    return s[0:2] + s[-2]+s[-1]
+    return s[:2] + s[-2:]             # return first 2 letters and last 2 letters of s
 
 
 # C. fix_start
@@ -52,7 +52,7 @@ def both_ends(s):
 # Hint: s.replace(stra, strb) returns a version of string s
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
-  return s[0] + s[1:].replace(s[0], '*')
+  return s[0] + s[1:].replace(s[0], '*')    # return first letter of s, then replace all first letter of s with '*'
 
 
 # D. MixUp
