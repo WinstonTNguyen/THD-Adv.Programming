@@ -26,6 +26,11 @@ List of libraries used:
 - Run the commands in the terminal: `.\google-python-exercises\basic\wordcount.py` with arguments `--count` for count all the words or `--topcount` for count only the top 20 words, and file name such as `alice.txt` and `small.txt`.
 E.g. `.\google-python-exercises\basic\wordcount.py --topcount alice.txt`
 
+**Instrution to execute mimic.py**
+- cd to relative path.
+- Run the commands in the terminal: `.\google-python-exercises\basic\mimic.py` and file name such as `alice.txt` and `small.txt`.
+E.g. `.\google-python-exercises\basic\mimic.py small.txt`
+
 ## Progress tracking
 Presentation on Machine Learning topic:
 - Winston's Wine (03.05.24):
@@ -36,3 +41,4 @@ Finished excercises:
 - list1.py (13.04.24)
 - list2.py (13.04.24)
 - wordcount.py (21.07.24)
+- mimic.py (21.07.24)
