@@ -31,14 +31,22 @@ E.g. `.\google-python-exercises\basic\wordcount.py --topcount alice.txt`
 - Run the commands in the terminal: `.\google-python-exercises\basic\mimic.py` and file name such as `alice.txt` and `small.txt`.
 E.g. `.\google-python-exercises\basic\mimic.py small.txt`
 
+**Instrution to execute babynames.py**
+- cd to relative path.
+- Run the commands in the terminal: `.\google-python-exercises\basic\babynames.py` with the `--summaryfile` arguement and file name such as `baby2008.html` or `baby1998.html`.
+E.g. `.\google-python-exercises\babynames\babynames.py --summaryfile baby2006.html`
+
 ## Progress tracking
 Presentation on Machine Learning topic:
 - Winston's Wine (03.05.24):
 
 Finished excercises:
-- string1.py (24.03.24)
-- string2.py (24.03.24)
-- list1.py (13.04.24)
-- list2.py (13.04.24)
-- wordcount.py (21.07.24)
-- mimic.py (21.07.24)
+- [x] string1.py (24.03.24)
+- [x] string2.py (24.03.24)
+- [x] list1.py (13.04.24)
+- [x] list2.py (13.04.24)
+- [x] wordcount.py (21.07.24)
+- [x] mimic.py (21.07.24)
+- [x] babynames.py (21.07.24)
+- [ ] copyspecial.py
+- [ ] logpuzzle.py
