@@ -20,6 +20,7 @@ The python code is executed directly in the editor. Simply open in an editor of 
 List of libraries used:
 - sys
 - os
+- re
 
 **Instrution to execute wordcount.py**
 - cd to relative path.
