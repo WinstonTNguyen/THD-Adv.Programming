@@ -2,9 +2,9 @@
 Author: Vu Thanh Nguyen Nguyen - 12403939 - Computer Engineer.
 
 ## Information about the course:
-Course name Advanced Programming
+Course name Advanced Programming.
 
-Instructor: Prof. Dr. Tobias Schaffer
+Instructor: Prof. Dr. Tobias Schaffer.
 
 This is a course provided in the A.I. for Smart Sensors and Actuators to familiarize students to coding, coding standards, best practices and working with Git.
 
