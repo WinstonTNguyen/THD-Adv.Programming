@@ -16,7 +16,7 @@ def remove_adjacent(nums):
   singleNums = []
   for num in nums:
     if num not in singleNums: # reduce the problem to remove any duplicate number
-      singleNums.append(num)
+      singleNums.append(num)  # weakness of O(n^n)
   return singleNums
 
 
