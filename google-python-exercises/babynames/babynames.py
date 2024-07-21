@@ -40,8 +40,56 @@ def extract_names(filename):
   followed by the name-rank strings in alphabetical order.
   ['2006', 'Aaliyah 91', Aaron 57', 'Abagail 895', ' ...]
   """
-  # +++your code here+++
-  return
+  #################SOLUTION STARTS############################
+  # List of names
+  names = []
+
+  # Open and read the file.
+  with open(filename, 'rt', encoding='utf-8') as f:
+    text = f.read()
+
+  # Could process the file line-by-line, but regex on the whole text
+  # at once is even easier.
+
+  # Get the year.
+  year_match = re.search(r'Popularity\sin\s(\d\d\d\d)', text)
+  if not year_match:
+    # We didn't find a year, so we'll exit with an error message.
+    sys.stderr.write('Couldn\'t find the year!\n')
+    sys.exit(1)
+  year = year_match.group(1)
+  names.append(year)
+
+  # Extract all the data tuples with a findall()
+  # each tuple is: (rank, boy-name, girl-name)
+  tuples = re.findall(r'<td>(\d+)</td><td>(\w+)</td>\<td>(\w+)</td>', text)
+  #print(tuples)
+
+  # Store data into a dict using each name as a key and that
+  # name's rank number as the value.
+  # (if the name is already in there, don't add it, since
+  # this new rank will be bigger than the previous rank).
+  names_to_rank = {}
+  for rank_tuple in tuples:
+    (rank, boyname, girlname) = rank_tuple  # unpack the tuple into 3 vars
+    if boyname not in names_to_rank:
+      names_to_rank[boyname] = rank
+    if girlname not in names_to_rank:
+      names_to_rank[girlname] = rank
+  # You can also write:
+  # for rank, boyname, girlname in tuples:
+  #   ...
+  # To unpack the tuples inside a for-loop.
+
+  # Get the names, sorted in the right order
+  sorted_names = sorted(names_to_rank.keys())
+
+  # Build up result list, one element per line
+  for name in sorted_names:
+    names.append(name + ' ' + names_to_rank[name])
+
+  return names
+  ################SOLUTION END#########################
 
 
 def main():
@@ -63,6 +111,19 @@ def main():
   # +++your code here+++
   # For each filename, get the names, then either print the text output
   # or write it to a summary file
+    
+  for filename in args:
+    names = extract_names(filename)
+
+    # Make text out of the whole list
+    text = '\n'.join(names)
+
+    if summary:
+      with open(filename + '.summary', 'w', encoding='utf-8') as outf:
+        outf.write(text + '\n')
+        outf.close()
+    else:
+      print(text)
 
 if __name__ == '__main__':
   main()
