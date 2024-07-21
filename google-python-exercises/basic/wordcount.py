@@ -40,6 +40,7 @@ print_words() and print_top().
 import sys
 import os
 
+#====================================SOLUTION STARTS====================================
 # +++your code here+++
 # Define print_words(filename) and print_top(filename) functions.
 # You could write a helper utility function that reads a file
@@ -63,6 +64,15 @@ def word_count_dict(filename):
         word_count[word] = word_count[word] + 1
   return word_count
 
+# This function print out and sort the words
+def print_words(filename):
+  word_count = word_count_dict(filename)
+  words = sorted(word_count.keys()) #Sort
+  for word in words:
+    print(word, word_count[word])
+
+#====================================SOLUTION END====================================
+    
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
 def main():
