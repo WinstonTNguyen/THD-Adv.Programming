@@ -13,13 +13,18 @@ The excercises are taken from: [Google's Python course](https://developers.googl
 Each exercises are done using seperate functions and tested with multiple testing cases.
 
 ## Instruction for code execution:
-The python code is executed directly on the Terminal. Simply open in an editor of choice (e.g. Visual Studio Code) and run the files. 
+The python code is executed directly in the editor. Simply open in an editor of choice (e.g. Visual Studio Code) and run the files, and the result will be printed out via the Terminal.
+
+**Python version: Python 3.11.9**
 
 List of libraries used:
 - sys
 - os
 
 ## Progress tracking
+Presentation on Machine Learning topic:
+- Winston's Wine (03.05.24):
+
 Finished excercises:
 - string1.py (24.03.24)
 - string2.py (24.03.24)
