@@ -8,9 +8,21 @@ Instructor: Prof. Dr. Tobias Schaffer.
 
 This is a course provided in the A.I. for Smart Sensors and Actuators to familiarize students to coding, coding standards, best practices and working with Git.
 
-The excercises are following [Google's Python course](https://developers.google.com/edu/python/).
+The excercises are taken from: [Google's Python course](https://developers.google.com/edu/python/).
+
+Each exercises are done using seperate functions and tested with multiple testing cases.
+
+## Instruction for code execution:
+The python code is executed directly on the Terminal. Simply open in an editor of choice (e.g. Visual Studio Code) and run the files. 
+
+List of libraries used:
+- sys
+- os
+
+## Progress tracking
 Finished excercises:
 - string1.py (24.03.24)
 - string2.py (24.03.24)
 - list1.py (13.04.24)
 - list2.py (13.04.24)
+- wordcount.py (21.07.24)
