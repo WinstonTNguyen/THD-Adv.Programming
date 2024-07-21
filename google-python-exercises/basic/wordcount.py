@@ -106,5 +106,8 @@ def main():
     print('unknown option: ' + option)
     sys.exit(1)
 
+  # Keep the input prompt open until a key is pressed
+  input("Press Enter to exit...")
+
 if __name__ == '__main__':
   main()
