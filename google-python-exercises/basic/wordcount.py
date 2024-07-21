@@ -71,6 +71,22 @@ def print_words(filename):
   for word in words:
     print(word, word_count[word])
 
+# Return count tuple
+def get_count(word_count_tuple):
+  return word_count_tuple[1]
+
+# Print the top words
+def print_top(filename):
+  word_count = word_count_dict(filename)
+
+  # Each item is a (word, count) tuple.
+  # Sort them so the big counts are first using key=get_count() to extract count.
+  items = sorted(word_count.items(), key=get_count, reverse=True)
+
+  # Print the first 20
+  for item in items[:20]:
+    print(item[0], item[1])
+
 #====================================SOLUTION END====================================
     
 # This basic command line argument parsing code is provided and
