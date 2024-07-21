@@ -12,7 +12,7 @@ The excercises are taken from: [Google's Python course](https://developers.googl
 
 Each exercises are done using seperate functions and tested with multiple testing cases.
 
-## Instruction for code execution:
+## Instructions for code execution:
 The python code is executed directly in the editor. Simply open in an editor of choice (e.g. Visual Studio Code) and run the files, and the result will be printed out via the Terminal.
 
 **Python version: Python 3.11.9**
@@ -20,6 +20,11 @@ The python code is executed directly in the editor. Simply open in an editor of 
 List of libraries used:
 - sys
 - os
+
+**Instrution to execute wordcount.py**
+- cd to relative path.
+- Run the commands in the terminal: `.\google-python-exercises\basic\wordcount.py` with arguments `--count` for count all the words or `--topcount` for count only the top 20 words, and file name such as `alice.txt` and `small.txt`.
+E.g. `.\google-python-exercises\basic\wordcount.py --topcount alice.txt`
 
 ## Progress tracking
 Presentation on Machine Learning topic:
