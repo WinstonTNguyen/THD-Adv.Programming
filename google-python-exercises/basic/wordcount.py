@@ -38,6 +38,7 @@ print_words() and print_top().
 """
 
 import sys
+import os
 
 # +++your code here+++
 # Define print_words(filename) and print_top(filename) functions.
@@ -45,6 +46,11 @@ import sys
 # and builds and returns a word/count dict for it.
 # Then print_words() and print_top() can just call the utility function.
 
+#Function to print file content
+def print_words(filename):
+  text_file = open(filename, 'r')
+  file_content = text_file.read()
+  return print(file_content)
 ###
 
 # This basic command line argument parsing code is provided and
