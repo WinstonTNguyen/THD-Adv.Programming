@@ -46,12 +46,22 @@ import os
 # and builds and returns a word/count dict for it.
 # Then print_words() and print_top() can just call the utility function.
 
-#Function to print file content
-def print_words(filename):
-  text_file = open(filename, 'r')
-  file_content = text_file.read()
-  return print(file_content)
-###
+# This function opens the file and return a word/count dict
+def word_count_dict(filename):
+  word_count = {} # word_count mapping
+  
+  input_file = open(filename, encoding='utf-8')
+  for line in input_file:
+    words = line.split()
+    for word in words:
+      word = word.lower()
+      
+      # Check if we have seen this word before
+      if not word in word_count:
+        word_count[word] = 1
+      else:
+        word_count[word] = word_count[word] + 1
+  return word_count
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
